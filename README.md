@@ -1,13 +1,13 @@
-# ft_linux
+# ChadLinux
 
-* Make your own linux distribution
+* Make my own linux distribution
 
-This subject is not about Kernel programming, but highly related.
+This is not about Kernel programming, but highly related.
 This distro will be the base for all my kernel projects, because all my kernel-code will be executed here, on this distro.
 
-Goald:
+Goal:
   * Build a Linux Kernel
-  * Install some binaries
+  * Install some binaries:
     - Acl (2.2.52)
     - Attr (2.4.47)
     - Autoconf (2.69)
@@ -76,8 +76,8 @@ Goald:
     - XML::Parser (2.44)
     - Xz Utils (5.2.1)
     - Zlib (1.2.8)
-  * Implement aa filesystem hierarchy compliant with the [standards](https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html)
-  * Connect to the Interne
+  * Implement a filesystem hierarchy compliant with the [standards](https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html)
+  * Connect to the Internet
 
 Resources:
   * [The bible](https://www.linuxfromscratch.org/lfs/view/stable/index.html)
@@ -85,13 +85,12 @@ Resources:
   * [Autotools](https://www.gnu.org/software/automake/manual/html_node/index.html#SEC_Contents)
 
 Instructions:
-  * Must use a virtual machine.
+  * Build on a virtual machine.
   * Respect these standards [IEEE](https://pubs.opengroup.org/onlinepubs/9699919799/), [LSB](https://refspecs.linuxfoundation.org/lsb.shtml).
-  * Must use a kernel version >= 4.0, stable or not.
+  * Kernel version >= 4.0, stable or not.
   * The kernel sources must be in /usr/src/kernel-$(version)
   * Must use at least 3 differents partitions. (root, /boot and a swap partition).
   * The distro must implement a kernel_module loader, like udev.
-  * Use 32-bit system.
-  * Must use a sofware for central management and configuration, like SysV or SystemD.
-  * Must boot with boot loaders, like LILO or GRUB.
-  *
+  * Use 64-bit system.
+  * Use a sofware for central management and configuration, like SysV or SystemD.
+  * Boot with boot loaders, like LILO or GRUB.
